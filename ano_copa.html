@@ -1,0 +1,34 @@
+<meta charset="UTF-8">
+
+<script>
+	
+	function pulaLinha() {           //criei uma funçao para pular linha 
+
+        document.write("<br>");
+   		document.write("<br>");
+    }
+    
+
+    function mostra(frase) {    //criei uma função para imprimir na tela 
+
+    	document.write(frase);
+    	pulaLinha();
+    }
+    
+    var limite = parseInt(prompt("Entre com a data limite"));    //Aprendemos que a função prompt() retorna o que é digitado como texto 
+                                                                 //função parseInt() converte um texto em número
+    var anoCopa = 1930;
+
+    while(anoCopa <= limite) {                 // while repetirá TODAS as instruções que estiverem dentro do seu bloco 
+                                                // e a CONDIÇÃO passada para ela for True (verdadeiro)
+
+        mostra("Teve copa em " + anoCopa);
+        anoCopa = anoCopa + 4;
+    }
+    mostra("fim");
+
+
+
+
+
+ </script>
